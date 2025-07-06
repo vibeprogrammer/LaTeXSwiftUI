@@ -25,7 +25,7 @@
 
 import SwiftUI
 
-#if os(iOS)
+#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst) || os(watchOS) || os(visionOS)
 import UIKit
 typealias PlatformFont = UIFont
 #else
